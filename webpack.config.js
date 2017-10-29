@@ -13,7 +13,8 @@ module.exports = {
     devServer: {
         inline: true,
         contentBase: './',
-        port: 3001
+        port: 3001,
+        filename: "./js/out.js",
     },
     watch: true,
     module: {
@@ -21,7 +22,7 @@ module.exports = {
             {
                 test: /\.js$/, exclude: /node_modules/,
                 loader:	'babel-loader',
-                query: { presets: ['es2015'] }
+                query: { presets: ['es2015','stage-2', 'react'] }
             },
             {
                 test: /\.scss$/,
