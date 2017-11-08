@@ -48,18 +48,13 @@ document.addEventListener('DOMContentLoaded', function(){
 
     class Template extends React.Component {
         render() {
-
-            const activeStyle = {
-                backgroundColor: 'green',
-            };
-
             return (
                 <div>
                     <div id="menu">
-                        <div><IndexLink activeStyle={activeStyle} to="/">About me</IndexLink></div>
-                        <div><Link activeStyle={activeStyle} to="/skills">Skills</Link></div>
-                        <div><Link activeStyle={activeStyle} to="/myworks">MyWorks</Link></div>
-                        <div><Link activeStyle={activeStyle} to="/contact">Contact</Link></div>
+                        <IndexLink to="/" className="link">About me</IndexLink>
+                        <Link  to="/skills" className="link">Skills</Link>
+                        <Link  to="/myworks" className="link">MyWorks</Link>
+                        <Link  to="/contact" className="link">Contact</Link>
                     </div>
                     {this.props.children}
                 </div>

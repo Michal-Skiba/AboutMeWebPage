@@ -13736,11 +13736,6 @@ document.addEventListener('DOMContentLoaded', function () {
         _createClass(Template, [{
             key: 'render',
             value: function render() {
-
-                var activeStyle = {
-                    backgroundColor: 'green'
-                };
-
                 return _react2.default.createElement(
                     'div',
                     null,
@@ -13748,40 +13743,24 @@ document.addEventListener('DOMContentLoaded', function () {
                         'div',
                         { id: 'menu' },
                         _react2.default.createElement(
-                            'div',
-                            null,
-                            _react2.default.createElement(
-                                _reactRouter.IndexLink,
-                                { activeStyle: activeStyle, to: '/' },
-                                'About me'
-                            )
+                            _reactRouter.IndexLink,
+                            { to: '/', className: 'link' },
+                            'About me'
                         ),
                         _react2.default.createElement(
-                            'div',
-                            null,
-                            _react2.default.createElement(
-                                _reactRouter.Link,
-                                { activeStyle: activeStyle, to: '/skills' },
-                                'Skills'
-                            )
+                            _reactRouter.Link,
+                            { to: '/skills', className: 'link' },
+                            'Skills'
                         ),
                         _react2.default.createElement(
-                            'div',
-                            null,
-                            _react2.default.createElement(
-                                _reactRouter.Link,
-                                { activeStyle: activeStyle, to: '/myworks' },
-                                'MyWorks'
-                            )
+                            _reactRouter.Link,
+                            { to: '/myworks', className: 'link' },
+                            'MyWorks'
                         ),
                         _react2.default.createElement(
-                            'div',
-                            null,
-                            _react2.default.createElement(
-                                _reactRouter.Link,
-                                { activeStyle: activeStyle, to: '/contact' },
-                                'Contact'
-                            )
+                            _reactRouter.Link,
+                            { to: '/contact', className: 'link' },
+                            'Contact'
                         )
                     ),
                     this.props.children
