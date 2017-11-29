@@ -59,3 +59,35 @@
   }
 }
 
+
+// Main
+
+#main{
+  background: url("../backgrounds/mainBackground.jpg")no-repeat center/cover;
+  #mainRow{
+    width: 100vw;
+    height: 10vh;
+    h1{
+      font-family: 'Anton', sans-serif;
+      font-size: 50px;
+      text-align: center;
+      padding-top: 2vh;
+      color: white;
+    }
+  }
+  #columnMain{
+    width: 100vw;
+    height: 78vh;
+    display: flex;
+    flex-direction: row;
+    #mainLeft{
+      width: 30%;
+      margin: 2%;
+      background: url("../images/myFoto.jpg")no-repeat center/cover;
+    }
+    #mainRight{
+      width: 70%;
+
+    }
+  }
+}

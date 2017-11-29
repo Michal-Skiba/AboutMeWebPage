@@ -45,3 +45,37 @@
   outline: none;
   /* CSS 3 */
 }
+
+#main {
+  background: url(../assets/mainBackground.jpg) no-repeat center/cover;
+}
+
+#main #mainRow {
+  width: 100vw;
+  height: 10vh;
+}
+
+#main #mainRow h1 {
+  font-family: 'Anton', sans-serif;
+  font-size: 50px;
+  text-align: center;
+  padding-top: 2vh;
+  color: white;
+}
+
+#main #columnMain {
+  width: 100vw;
+  height: 78vh;
+  display: flex;
+  flex-direction: row;
+}
+
+#main #columnMain #mainLeft {
+  width: 30%;
+  margin: 2%;
+  background: url(../assets/myFoto.jpg) no-repeat center/cover;
+}
+
+#main #columnMain #mainRight {
+  width: 70%;
+}

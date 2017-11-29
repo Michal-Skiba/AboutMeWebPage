@@ -13606,11 +13606,39 @@ document.addEventListener('DOMContentLoaded', function () {
 
         _createClass(Main, [{
             key: 'render',
+            //About me
             value: function render() {
                 return _react2.default.createElement(
-                    'h1',
-                    null,
-                    'Main'
+                    'div',
+                    { id: 'main' },
+                    _react2.default.createElement(
+                        'div',
+                        { id: 'mainRow' },
+                        _react2.default.createElement(
+                            'h1',
+                            null,
+                            'How i became a programmer'
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { id: 'columnMain' },
+                        _react2.default.createElement('div', { id: 'mainLeft' }),
+                        _react2.default.createElement(
+                            'div',
+                            { id: 'mainRight' },
+                            _react2.default.createElement(
+                                'h2',
+                                null,
+                                'My first job'
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                'I worked in a family company that performs ventilation and air conditioning. But I felt it was not the job that I wanted to do. Working in my old company, I tried programming, but after-hours teaching brought too little effect. The decision turned out to be simple. I quit my job and devote myself to programming 100%. I went to the course coders-lab, I am currently studying, while looking for a dream job.'
+                            )
+                        )
+                    )
                 );
             }
         }]);
